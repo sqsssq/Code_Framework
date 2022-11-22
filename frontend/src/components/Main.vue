@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Qing Shi
  * @Date: 2022-11-20 23:25:35
- * @LastEditTime: 2022-11-21 00:48:20
+ * @LastEditTime: 2022-11-22 17:19:07
 -->
 <template>
     <div>
@@ -11,20 +11,20 @@
     </div>
 </template>
 <script>
+import { dataService } from '@/service'
 export default {
     name: 'APP',
     props: ["msgH"],
-    data () {
+    data() {
         return {
             msg1: "Hello, main!"
         }
     },
     methods: {
     },
-    created () {
+    created() {
     },
-    mounted () {
-        console.log(111)
+    mounted() {
     },
 }
 </script>

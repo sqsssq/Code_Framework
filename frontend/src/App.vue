@@ -2,81 +2,87 @@
  * @Description: 
  * @Author: Qing Shi
  * @Date: 2022-11-20 18:21:36
- * @LastEditTime: 2022-11-21 00:21:34
+ * @LastEditTime: 2022-11-22 16:51:40
 -->
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <div id="app">
+  <div id="app" 
+    style="height: calc(100vh - 20px)">
     <RouterView />
   </div>
 </template>
 
 <style>
-/* header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 2rem;
+  color: #2c3e50;
+  height: 100%;
+  width: 100%;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.mini_head {
+  /* background: rgb(243,243,243); */
+  /* background: #E5EEF8 ; */
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  box-sizing: border-box;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+.mini_title {
+  font-family: "monospace";
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  /* color: #fff; */
+  /* padding-left: 3px; */
+  /* display: table-cell; */
+  font-weight: bold;
+  /* vertical-align: middle;
+        background: #E5EEF8; */
+        
+  /* border-radius: 3px; */
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+
+  /* background-image: linear-gradient(
+    to right,
+    #418d8e,
+    rgb(102, 173, 179),
+    #e8d7cc
+  ); */
+  line-height: 30px;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+.boundary {
+  border-style: dashed;
+  border-color: #d3dce6;
+  border-width: 1px;
+  /* border-color: rgb(72, 143, 143); */
 }
 
-nav a:first-of-type {
-  border: 0;
+.el-table .warning-row {
+  background: #a6cee3;
+  
+  /* background-image: linear-gradient(
+    to right,
+    white, 70%,
+    #B6D0D1
+  ); */
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-} */
-.el-table .cell {
-  word-break: keep-all;
+.boundary {
+  /*border-style: dashed;*/
+  border-style: solid;
+  /* border-color: rgb(72, 143, 143); */
+  border-width: 1px;
+  border-radius: 3px;
 }
 </style>

@@ -2,10 +2,10 @@
  * @Description: 
  * @Author: Qing Shi
  * @Date: 2022-09-17 23:36:36
- * @LastEditTime: 2022-11-21 00:49:53
+ * @LastEditTime: 2022-11-22 17:08:19
 -->
 <template>
-  <div class="common-layout" style="width: 100%" v-loading="initSign" :element-loading-text="loadingText"
+  <div class="common-layout" style="width: 100%; height: 100vh;" v-loading="initSign" :element-loading-text="loadingText"
         element-loading-background="rgba(0, 0, 0, 0.8)">
     <Main :msgH="msgH"/>
   </div>
@@ -46,4 +46,11 @@ export default {
 </script>
 <style scoped>
 
+.boundary {
+        /*border-style: dashed;*/
+        border-style: solid;
+        border-color: #d3dce6;
+        border-width: 0.5px;
+        border-radius: 3px;
+    }
 </style>
